@@ -5,7 +5,7 @@ Snake game using ncurses library and C++
 # Use arrow keys to move the snake.
 # There are two stages.
 # You will get 10 points for each bait that you will catch.
-# First stage completes after you score 180 points.
+# First stage completes after you score 100 points.
 # Second stage continues till you are alive.
 
 To run game:
@@ -15,5 +15,5 @@ To run game:
 	make all
 # Run executable file "mygame".
 	./mygame
-# Run command to clean object files and executables:
+# Run command to clean object files and executable:
 	make clean
