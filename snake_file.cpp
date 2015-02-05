@@ -1,21 +1,24 @@
+/*
+All the functions are defined in this file
+*/
 #include "snake.h"
 
-int snakeclass::stage=0;
+int snakeclass::stage=0;// static object to keep a track of stage number. For each stage, a new object is being created
 
-food_val::food_val()
+food_val::food_val()// to initialise default bait position
 {
 	x=0;
 	y=0;
 }
 
-food_val::food_val(int p,int q)
+food_val::food_val(int p,int q)// to initialise bait position with given values 
 {
 	x=p;
 	y=q;
 }
 
 
-snakeclass::snakeclass(int pre_point,int high)
+snakeclass::snakeclass(int pre_point,int high)// snakeclass constructor with two arguments i.e initial points at the start of stage and top score
 {
 	initscr();
 	nodelay(stdscr,true);  //getch will not wait until user presses a key
