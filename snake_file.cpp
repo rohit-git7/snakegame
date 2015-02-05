@@ -47,40 +47,6 @@ snakeclass::snakeclass(int pre_point,int high)
 	stage++;
 }
 
-
-
-snakeclass::snakeclass(int high)
-{
-	initscr();
-	nodelay(stdscr,true);  //getch will not wait until user presses a key
-	keypad(stdscr,true);
-	noecho();
-	curs_set(0);
-	getmaxyx(stdscr,maxheight,maxwidth);
-	
-	snake_char='x';
-	obst_char=(char)219;
-	food_char='*';
-	low_bound='-';
-	food.x=0;
-	food.y=0;
-
-	for(int i=0;i<5;i++)
-	{
-	     snake.push_back(std::make_pair(40+i,10));
-   	}
-
-	points=0;
-	temp=0;
-	coll=0;
-	del=110000;
-	get=false;
-	direction='l';
-	srand(time(0));
-	high_score=high;
-	stage++;
-}
-
 snakeclass::~snakeclass()
 {
 	nodelay(stdscr,false);
