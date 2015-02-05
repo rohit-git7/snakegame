@@ -16,7 +16,7 @@ int main()
  	
  	close(fd);
   
- 	snakeclass s(sum);
+ 	snakeclass s(0,sum);
  	s.start();
  	return 0;
 }
