@@ -8,11 +8,12 @@ Snake game using ncurses library and C++
  Second stage continues till you are alive.
 
 To run game:
- Extract tar file.
-	tar -xvf snakegame.tar
- Run command to create executable file:
+-------------
+ Extract tar file.                                                                                    
+        tar -xvf snakegame.tar
+ Run command to create executable file:                                                                    
 	make all
- Run executable file "mygame".
-	./mygame
- Run command to clean object files and executable:
-	make clean
+ Run executable file "mygame".                                                      
+        ./mygame
+ Run command to clean object files and executable:                                          
+        make clean
