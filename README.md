@@ -10,10 +10,10 @@ Snake game using ncurses library and C++
 To run game:
 -------------
  Extract tar file.                                                                                    
-        tar -xvf snakegame.tar
+        tar -xvf snakegame.tar                                                                    
  Run command to create executable file:                                                                    
-	make all
+	make all                                                                                       
  Run executable file "mygame".                                                      
-        ./mygame
+        ./mygame                                                                             
  Run command to clean object files and executable:                                          
-        make clean
+        make clean                                                                         
